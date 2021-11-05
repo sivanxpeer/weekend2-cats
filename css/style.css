@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  font-size: 2vw;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: black;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+.page-1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-section {
+  width: 50%;
+  height: 100%;
+  background-image: url(/images/cats/nala06.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.left-section {
+  width: 50%;
+  height: 100%;
+  color: white;
+}
+
+.logo {
+  background: url();
+  color: white;
+}
+.main-header{
+    position: absolute;
+    top:0;
+}
+.main-header h1 {
+  margin-left: 90px;
+  /* h-shadow | v-shadow | color */
+  /* text-shadow: 0.07rem 0.07rem #008CBA; */
+}
+
+.navbar {
+  position: sticky;
+  margin: 10px 10px;
+  border: black solid 2 px;
+}
+
+.navbar .navbar-list {
+  display: flex;
+  justify-content: flex-end;
+  /* position: sticky; */
+  /* margin: 100px; */
+}
+
+.navbar-list li {
+  list-style: none;
+}
+
+.navbar-list li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.navbar-list li  :hover{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    background-color: #008CBA;
+    color: white;
+}
+
+
+/* page-2 */
+
+.page-2{
+    width:100vw;
+    height: 100vh;
+    /* position: relative; */
+}
+
+
+/* page-3 */
+
+.page-3{
+    display: flex;
+    width:100vw;
+    height: 100vh;
+    position: relative;
+    
+}
+
+.gallery-1 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0.4rem;
+    grid-row-gap: 0.4rem;
+    margin:auto;
+    }
+    
+    img {
+    height: 100% ;
+    width: 100%;
+    position: relative;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .div1 { grid-area: 2 / 3 / 3 / 4; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 2 / 3 / 3; }
+    .div4 { grid-area: 1 / 3 / 2 / 4; }
+    .div5 { grid-area: 1 / 4 / 2 / 5; }
+    .div6 { grid-area: 2 / 4 / 3 / 5; }
+    .div7 { grid-area: 3 / 2 / 4 / 3; }
+    .div8 { grid-area: 3 / 3 / 4 / 4; }
+    .div9 { grid-area: 3 / 4 / 4 / 5; }
