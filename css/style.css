@@ -129,9 +129,10 @@ body::-webkit-scrollbar {
 .navbar {
     position: fixed;
     left: 0.2rem;
-    top: 6rem;
+    top: 7rem;
     margin: 10px 10px;
     border: black solid 2 px;
+    z-index: 10;
 }
 
 .navbar .navbar-list {
@@ -143,18 +144,33 @@ body::-webkit-scrollbar {
     /* align-items: center; */
 }
 
+
 .navbar-list li {
     padding: 0.5rem;
     list-style: none;
 }
 
+.navbar-list li span{
+    color: transparent;
+
+}
 .navbar-list li a {
     text-decoration: none;
     color: black;
+    align-content: center;
+    /* display: none; */
 }
 
+.navbar-list li:first-child{
+    /* border: yellow 2px solid; */
+    margin-left: 0.3rem;
+}
+.navbar-list span{
+    margin-left: 0.5rem;
+}
 li :hover {
     cursor: pointer;
+
     /* background-color: white;  */
     /* border: 2px solid var(--secondary-color); */
     /* background-color: var(--secondary-color); */
@@ -162,6 +178,11 @@ li :hover {
 
 li a:hover {
     border-radius: 0.8rem;
+    color: white;
+}
+
+
+li a:hover ~ span{
     color: white;
 }
 
