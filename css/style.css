@@ -42,7 +42,7 @@ body::-webkit-scrollbar {
   display: flex;
 }
 
-.left-section {
+.page-1--left-section {
   width: 50vw;
   float: right;
   height: 100vh;
@@ -54,13 +54,13 @@ body::-webkit-scrollbar {
   text-align: center;
 }
 
-.right-section {
+.page-1--right-section {
   width: 30vw;
   height: 100vh;
   border: 2px solid red;
 }
 
-.page-1--background-image {
+.right-section--background-image {
   height: 100%;
   width: 100%;
   background: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/98880a65948559.5b05916bdc9e3.jpg")no-repeat center center/cover;
